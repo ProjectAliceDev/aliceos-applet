@@ -48,3 +48,19 @@ A wonderful but short description of a delicious applet.
 # app's manifest here. This may include screens, labels,
 # or definitions. Please keep all of your applet's code
 # in this file.
+
+# Sample window
+init screen windowname:
+    use UIWindow(renpyApp)
+    use UIWindowContent
+    vbox:
+        xanchor -16
+        yanchor -68
+        xoffset 32
+        yoffset 32
+        xsize 1216
+        ysize 603
+        vbox:
+            # It is recommended to put your content here
+            text "Content":
+                style "app_default_text"
